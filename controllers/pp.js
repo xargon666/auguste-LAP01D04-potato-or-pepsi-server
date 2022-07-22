@@ -26,6 +26,7 @@ router.post('/', (req, res) => {
     res.status(201).send(newPp);
 });
 
+// destroy by id
 router.delete('/:id', (req, res) => {
     const ppId = parseInt(req.params.id);
     const ppToDestroy = Pp.findById(ppId);
@@ -33,7 +34,8 @@ router.delete('/:id', (req, res) => {
     res.status(204).send();
 });
 
-router.destroyAll('/', (req,res) =>{
+// destroy all
+router.destroy('/', (req,res) =>{
     Pp.destroyAll()
     res.status(204).send()
 })
