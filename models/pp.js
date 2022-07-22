@@ -32,10 +32,14 @@ class Pp{
         return newPp;
     }
 
+    static destroyAll(){
+        ppsData = []
+    }
     destroy(){
         const pp = ppsData.filter((findPp) = findPp.id === ppsData.id)[0];
         ppsData.splice(ppsData.indexOf(pp),1)
     }
+
 }
 
 module.exports = Pp;
