@@ -13,7 +13,11 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    res.status(405).send('Not allowd!');
+    res.status(405).send("You're not meant to be here");
+});
+
+app.delete('/', (req, res) => {
+    res.status(405).send("You're not meant to be here");
 });
 
 module.exports = app;

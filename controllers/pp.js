@@ -36,6 +36,7 @@ router.delete('/:id', (req, res) => {
 
 // destroy all
 router.delete('/', (req,res) =>{
+    console.log("Pp:",Pp)
     Pp.destroyAll()
     res.status(204).send()
 })

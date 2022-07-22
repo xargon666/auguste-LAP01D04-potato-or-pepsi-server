@@ -33,8 +33,11 @@ class Pp{
     }
 
     static destroyAll(){
+        console.log(ppsData)
         ppsData = []
+        return ppsData
     }
+
     destroy(){
         const pp = ppsData.filter((findPp) = findPp.id === ppsData.id)[0];
         ppsData.splice(ppsData.indexOf(pp),1)
