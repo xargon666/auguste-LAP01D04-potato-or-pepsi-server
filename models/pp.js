@@ -33,8 +33,8 @@ class Pp{
     }
 
     static destroyAll(){
-        console.log(ppsData)
         ppsData.splice(0,ppsData.length)
+        console.log(ppsData)
         return ppsData
     }
 
