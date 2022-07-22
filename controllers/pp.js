@@ -38,7 +38,7 @@ router.delete('/:id', (req, res) => {
 router.delete('/', (req,res) =>{
     console.log("Pp:",Pp)
     Pp.destroyAll()
-    res.status(204).send()
+    res.status(204).send(ppsData)
 })
 
 module.exports = router;
