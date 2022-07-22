@@ -1,4 +1,4 @@
-// My cats resource
+// My Pepsi Data
 
 const ppsData = [
     { id: 1, name: 'potato'},
